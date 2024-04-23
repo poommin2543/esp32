@@ -13,8 +13,8 @@ esp_now_peer_info_t peerInfo;
 // callback function that will be executed when data is received
 void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {
   memcpy(&InputValue, incomingData, sizeof(InputValue)); 
-  Serial.println(" -- Data Recieved -- : ");
-  Serial.print(InputValue);
+  Serial.print(" -- Data Recieved -- : ");
+  Serial.println(InputValue);
 }
 
 
